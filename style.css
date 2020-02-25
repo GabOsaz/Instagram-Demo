@@ -1,0 +1,443 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 77px;
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+    background-color: rgba(var(--cdc,255,255,255),1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.navCont {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 23px;
+    align-items: center;
+    max-width: 975px;
+    padding: 26px 20px;
+    transition: height .2s ease-in-out;
+    width: 100%;
+}
+
+/*First nav Item ----------------------------------------->*/
+
+.firstnavItem {
+    position: absolute;
+    top: 35%;
+    align-items: center;
+    flex-basis: 250px;
+}
+
+.singleBorder {
+    display: inline-block;
+    background-color: rgba(var(--i1d,38,38,38),1);
+    height: 28px;
+    margin: 0 16px;
+    transition: opacity .1s ease-out;
+    width: 1px;
+}
+
+.trademarkCont {
+    position: absolute;
+    display: inline-block;
+    margin-top: 4px;
+    transition: opacity .1s ease-out;
+    width: 100px;
+}
+
+.trademark {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Second nav Item-------------------------------------> */
+.searchInput {
+    position: absolute;
+    top: 32%;
+    height: 28px;
+    width: 17%;
+}
+
+.input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    background-image: url('searchIcon.png');
+    background-size: 10px 10px;
+    background-position: 2% 52%;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 4px;
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+input::placeholder{
+    text-align: center;
+ }
+
+/* Third nav Item ------------------------------------>*/
+.thirdnavItem {
+    position: absolute;
+    top: 35%;
+    right: 16%;
+    flex-basis: 250px;
+}
+
+.margin {
+    margin-right: 20px
+}
+
+.main {
+    position: relative;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    margin-top: -62px;
+    width: 100%;
+    height: 200vh;
+    padding-top: 0;
+}
+
+.box {
+    position: relative;
+    margin: 200px 1% 0 12%;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-bottom: none;
+    width: 48%;
+    padding: 5px 0;
+    height: 62px;
+    background-color: rgba(var(--cdc,255,255,255),1);
+}
+
+.subsequentBoxes {
+    margin: 50% 1% 0 12%;
+}
+
+.addedMargin {
+    margin: 62% 1% 0 12%;
+}
+
+.addedMargin2 {
+    margin: 62% 1% 0 12%;
+}
+
+.boxHeader {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-top: 13px;
+    background-color: rgba(var(--cdc,255,255,255),1);
+}
+
+.namenPhoto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+    margin-left: 10px
+}
+
+.profilePixCircle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.profilePixCircle img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.name {
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    font-style: arial;
+}
+
+.moreOptions {
+    position: absolute;
+    right: 10px;
+    top: 24px;
+}
+
+.myGuy {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    border-left: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-right: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+
+.likeEtAl {
+    width: 100%;
+    padding: 10px 10px 5px;
+    background-color: rgba(var(--cdc,255,255,255),1);
+    position: absolute;
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+    bottom: 0px;
+    font-size: 14px;
+}
+
+.like {
+    margin-right: 10px;
+}
+
+.message {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.save {
+    float: right;
+}
+
+.likesNum {
+    margin: 7px 0;
+}
+
+.likesNum a {
+    color: black;
+    font-weight: 600px;
+}
+
+.viewAll {
+    color: grey;
+}
+
+.bottomMargin {
+    margin-bottom: 7px
+}
+
+.addComment {
+    position: relative;
+    margin: 10px 0;
+}
+
+.addComment input {
+    border: none;
+    width: 90%;
+    padding: 10px 0;
+}
+
+.addComment input::placeholder {
+    text-align: left;
+    font-size: 14px;
+}
+
+.addComment input:focus {
+    outline: none;
+}
+
+.post {
+    position: absolute;
+    right: 0;
+    color:  rgba(var(--h5f,56,151,240),1);
+    opacity: .3;
+}
+
+.top {
+    position: absolute;
+    display: inline-flex;
+    top: 50px;
+    left: 56%;
+    margin: 80px 20px 0 90px;
+    width: 10%;
+    height: 100px;
+}
+
+#me {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.topSide {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: auto;
+    margin-left: 15px;
+    padding: 0;
+}
+
+.aside {
+    position: absolute;
+    top: 120px;
+    left: 56%;
+    margin: 80px 20px 0 90px;
+    width: 30%;
+    padding: 10px;
+    height: auto;
+    background-color: rgba(var(--cdc,255,255,255),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 4px;
+}
+
+.asideHead {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.statuses {
+    height: 185px;
+    width: 100%;
+    overflow: hidden auto;
+}
+
+.picFrame {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 37px;
+    height: 37px;
+    background-color: rgba(var(--cdc,255,255,255),1);
+    border: 2px solid rgb(243, 38, 72);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.others {
+    width: 35px;
+    height: 35px;
+    margin-top: .5px;
+    border-radius: 50%;
+}
+
+.profiles {
+    margin-top: 10px;
+}
+
+.profileName {
+    display: inline-flex;
+    width: 100%;
+}
+
+.profileName .profileDetails {
+    flex-basis: 300px;
+}
+
+.aside2 {
+    position: absolute;
+    top: 375px;
+    left: 56%;
+    margin: 80px 20px 0 90px;
+    width: 30%;
+    padding: 10px;
+    height: auto;
+    background-color: rgba(var(--cdc,255,255,255),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 4px;
+}
+
+
+.follow {
+    color: rgba(var(--h5f,56,151,240),1);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.smallScreenProfile {
+    display: none;
+}
+
+.fixedPosition {
+    position: sticky;
+    margin-top: -1256px;
+}
+
+@media (max-width: 1000px) {
+    .top {
+        display: none;
+    }
+
+    .asideHead, .aside {
+        display: none;
+    }
+
+    .aside2 {
+        display: none;
+    }
+
+    .smallScreenProfile {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(9, 80px);
+        grid-column-gap: 2px;
+        align-content: center;
+        width: 740px;
+        height: 100px;
+        margin-left: 12%;
+        margin-bottom: 80px;
+        top: 100px;
+        padding: 10px;
+        border: 1px solid rgba(var(--b6a,219,219,219),1);
+    }
+
+    .picFrame {
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 2px;
+    }
+
+    .others {
+        width: 95%;
+        height: 95%;
+        margin-top: 4px;
+        margin-left: 2px;
+    }
+
+    .box {
+        margin: 190px 1% 0 12%;
+        width: 80%;
+    }
+
+    .subsequentBoxes {
+        margin: 83% 1% 0 12%;
+    }
+
+    .addedMargin2 {
+        margin: 103% 1% 0 12%;
+    }
+}
+
+@media (max-width: 600px) {
+    .searchInput {
+        display: none;
+    }
+}
